@@ -178,7 +178,7 @@
 
         <div mat-dialog-actions align="end">
             <button mat-raised-button mat-dialog-close >Cancel</button>
-            <button mat-raised-button style="background-color:#1577ff; color: white; cursor: pointer;" >Submit</button>
+            <button mat-raised-button style="background-color:#1577ff; color: white; cursor: pointer;" [disabled]="reactiveForm.invalid">Submit</button>
         </div>
     </form>
 </div>
